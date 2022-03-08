@@ -14,10 +14,9 @@ public class Zad4 {
             userChoice = scanner.nextInt();
 
             switch (userChoice) {
-                case 0 -> {
-                    System.out.println("Exit from the program");
-                    isTrue = false;
-                }
+                case 0 -> System.out.println("Exit from the program");
+
+
                 case 1 -> {
                     System.out.println("Specify the temperature:");
                     userTemperature = scanner.nextDouble();
@@ -25,7 +24,7 @@ public class Zad4 {
                     double fahrenheit = celsiusToFahrenheit(userTemperature);
                     System.out.println(userTemperature + "°C is " + kelvin + "°K");
                     System.out.println(userTemperature + "°C is " + fahrenheit + "°F");
-                    isTrue = false;
+
                 }
                 case 2 -> {
                     System.out.println("Specify the temperature:");
@@ -34,7 +33,7 @@ public class Zad4 {
                     double fahrenheit = kelvinToFahrenheit(userTemperature);
                     System.out.println(userTemperature + "°K is " + celsius + "°C");
                     System.out.println(userTemperature + "°K is " + fahrenheit + "°F");
-                    isTrue = false;
+
                 }
                 case 3 -> {
                     System.out.println("Specify the temperature:");
@@ -43,10 +42,12 @@ public class Zad4 {
                     double kelvin = fahrenheitToKelvin(userTemperature);
                     System.out.println(userTemperature + "°F is " + celsius + "°C");
                     System.out.println(userTemperature + "°F is " + kelvin + "°K");
+
+                }
+                default -> {
+                    System.out.println("You have dialled an incorrect number. Dial the number again.");
                     isTrue = false;
                 }
-                default -> System.out.println("You have dialled an incorrect number. Dial the number again.");
-
             }
         } while (isTrue);
     }
@@ -56,6 +57,7 @@ public class Zad4 {
         System.out.println("1 - Celsius");
         System.out.println("2 - Kelvin");
         System.out.println("3 - Fahrenheit");
+        System.out.println("0 - exit");
     }
 
     public static double celsiusToKelvin(double temperature) {
