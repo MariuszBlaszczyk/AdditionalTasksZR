@@ -25,8 +25,8 @@ public class Zad4 {
                     userTemperature = scanner.nextDouble();
                     double kelvin = celsiusToKelvin(userTemperature);
                     double fahrenheit = celsiusToFahrenheit(userTemperature);
-                    System.out.println(userTemperature + "°C is " + kelvin + "°K");
-                    System.out.println(userTemperature + "°C is " + fahrenheit + "°F");
+                    System.out.println(userTemperature + "°C is " + kelvin + "°K.");
+                    System.out.println(userTemperature + "°C is " + fahrenheit + "°F.");
 
                 }
                 case 2 -> {
@@ -34,8 +34,8 @@ public class Zad4 {
                     userTemperature = scanner.nextDouble();
                     double celsius = kelvinToCelsius(userTemperature);
                     double fahrenheit = kelvinToFahrenheit(userTemperature);
-                    System.out.println(userTemperature + "°K is " + celsius + "°C");
-                    System.out.println(userTemperature + "°K is " + fahrenheit + "°F");
+                    System.out.println(userTemperature + "°K is " + celsius + "°C.");
+                    System.out.println(userTemperature + "°K is " + fahrenheit + "°F.");
 
                 }
                 case 3 -> {
@@ -43,21 +43,19 @@ public class Zad4 {
                     userTemperature = scanner.nextDouble();
                     double celsius = fahrenheitToCelsius(userTemperature);
                     double kelvin = fahrenheitToKelvin(userTemperature);
-                    System.out.println(userTemperature + "°F is " + celsius + "°C");
-                    System.out.println(userTemperature + "°F is " + kelvin + "°K");
+                    System.out.println(userTemperature + "°F is " + celsius + "°C.");
+                    System.out.println(userTemperature + "°F is " + kelvin + "°K.");
 
                 }
-                default -> {
+                default ->
                     System.out.println("You have dialled an incorrect number. Dial the number again.");
-
-                }
 
             }
         } while (isTrue);
     }
 
     private static void showMenu() {
-        System.out.println("Select the number corresponding to the temperature unit");
+        System.out.println("\nSelect the number corresponding to the temperature unit");
         System.out.println("1 - Celsius");
         System.out.println("2 - Kelvin");
         System.out.println("3 - Fahrenheit");
