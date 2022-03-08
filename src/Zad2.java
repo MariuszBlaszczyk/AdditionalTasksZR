@@ -1,8 +1,8 @@
 public class Zad2 {
 
     /*
-    Stwórz generator hasła.
-Hasło musi zawierać co najmniej jedną cyfrę
+     Stwórz generator hasła.
+     Hasło musi zawierać co najmniej jedną cyfrę
      Hasło musi zawierać co najmniej jedną dużą literę
      Hasło musi zawierać co najmniej jedną małą literę
      Hasło musi zawierać co najmniej jeden znak specjalny
