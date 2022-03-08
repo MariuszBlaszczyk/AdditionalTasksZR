@@ -14,8 +14,11 @@ public class Zad4 {
             userChoice = scanner.nextInt();
 
             switch (userChoice) {
-                case 0 -> System.out.println("Exit from the program");
 
+                case 0 -> {
+                    System.out.println("Exit from the program");
+                    isTrue = false;
+                }
 
                 case 1 -> {
                     System.out.println("Specify the temperature:");
@@ -46,8 +49,9 @@ public class Zad4 {
                 }
                 default -> {
                     System.out.println("You have dialled an incorrect number. Dial the number again.");
-                    isTrue = false;
+
                 }
+
             }
         } while (isTrue);
     }
